@@ -1,5 +1,5 @@
-# Table of content
-- ".xml" provides a filter with often abused APIs; such APIs come out from:
+# Table of contents
+- `APIs_frequently_used_enhanced.xml` provides a filter with often abused Windows APIs; such APIs come out from:
   - samples that I personally analysed;
   - suggestions from <https://malapi.io/> (which maps Windows APIs to common techniques used by malware);
   - suggestions from <https://www.sans.org/white-papers/33649/> (which is a white paper about abused APIs);
