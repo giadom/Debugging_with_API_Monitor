@@ -14,6 +14,7 @@
 
 # FAQs
 ## Why not simply attach API Monitor to a debugged program?
-Unfortunately API Monitor will fail in doing such operation: it will print an error message.
+Unfortunately API Monitor will fail in doing such operation: it will print an error message.  
+![Alternative text: "API Monitor error while attaching to a debugged program"](./Images/.png)
 ## What about anti-debugging techniques?
 This technique (as it is) can be detected by a sample looking for manually inspection traces.
