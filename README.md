@@ -10,3 +10,7 @@ I will not explain in detail the functioning of this latter tool (for which I ki
 At:
 - "Guide" you will find the tutorial for this technique.
 - "Filters" you will find some suggested filters to be feeded to `API Monitor`.
+
+# To do list
+- [ ] Explain why this work.
+- [ ] Extend the APIs filterable by `API Monitor`.
