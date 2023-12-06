@@ -8,6 +8,9 @@
   - filters all the APIs present in _Kernel32.dll_ and _Ntdll.dll_;
   - breaks the execution **before** any call of them.
 - `All_APIs.xml` provides a filter containing all the APIs filterable.
+- `APIs_frequently_used.xml` provides a filter with often abused Windows APIs (less than the first one); such APIs come out from:
+  - suggestions from <https://malapi.io/> (which maps Windows APIs to common techniques used by malware);
+  - suggestions from <https://www.sans.org/white-papers/33649/> (which is a white paper about abused APIs);
 
 # Caveats
 - When putting a breakpoint in one API, be conscious that it will interrupt the sample every time it is called.
