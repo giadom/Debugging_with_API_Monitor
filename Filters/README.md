@@ -14,4 +14,7 @@
 
 # Caveats
 - When putting a breakpoint in one API, be conscious that it will interrupt the sample every time it is called.
-- Filtering too many APIs will slow the program under inspection.
+- Filtering too many APIs will slow down the program under inspection.
+
+# To do list
+- [ ] Extend the APIs filterable by `API Monitor` (i.e. modify the inner XML files of `API Monitor` in order to provide more APIs filterable by the user).
