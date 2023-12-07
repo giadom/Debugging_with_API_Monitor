@@ -2,7 +2,7 @@
 
 # Topic of this guide
 The technique illustrated in this guide is oriented **for Windows** and allows to debug a sample (i.e. an instance of a malware) using **also** _API Monitor_ (by Rohitab).  
-This technique has sped up my malware analysis on several occasion and to use it you just need:
+This technique has sped up my malware analysis on several occasions and to use it you just need:
 - your favourite debugger;
 - `API Monitor`.
 
