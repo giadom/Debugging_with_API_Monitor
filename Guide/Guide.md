@@ -25,3 +25,6 @@ Unfortunately API Monitor will fail in doing such operation: it will print an er
 
 ## What about anti-debugging techniques used by samples?
 This technique (as it is) can be detected by a sample looking for manually inspection traces.
+
+# To do list
+- [ ] Explain why this technique works.
