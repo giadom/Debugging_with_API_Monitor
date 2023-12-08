@@ -1,10 +1,11 @@
 # Debugging with API Monitor
 ## Technique description
-1. Start the chosen debugger with **administrative privileges**; for this tutorial I will use _x32dbg_.
-2. Start `API Monitor` with **administrative privileges** and
+1. Run the chosen debugger with **administrative privileges**; for this tutorial I will use _x32dbg_.
+2. Run `API Monitor` with **administrative privileges** and
    1. load a filter that blocks as soon as possible the sample to be analysed; I suggest to use the [Kernel32_Ntdll.xml](https://github.com/giadom/Debugging_with_API_Monitor/tree/main/Filters/) file present in the "Filters" directory of this repository;  
-      ![Alternative text: ""](./Images/.png)
+      ![Alternative text: "Loading a 'blocking filter' in API Monitor"](./Images/load_blocking_filter.png)
    2. start monitoring a new sample (i.e. a program **not currently running**).
+      ![Alternative text: "Monitoring a new sample in API Monitor"](./Images/monitoring_new_sample.png)
 3. As you can see the program has stopped immediatly thanks to `API Monitor` (if you used the suggested filter, this interruption happened because every program calls immediatly an API of `Kernel32.dll` or `Ntdll.dll`); do not press the _Continue_ or _Break_ buttons for now.
 4. **Attach** the debugger chosen to the sample.
 5. Put a **breakpoint** (a software one will be fine) to the entry point of the sample.
