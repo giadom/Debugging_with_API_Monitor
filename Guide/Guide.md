@@ -25,7 +25,7 @@
     2. go to `Include`
     3. press the `Calling Module Name` button  
     ![Alternative text: "API Monitor while putting a display filter"](./Images/putting_display_filter.png)  
-    As you can see now you can **better understand** what is happening:  
+    As you can see now you can better understand what is happening:  
     ![Alternative text: "API Monitor displaying only APIs called by the sample"](./Images/after_display_filter.png)
 12. When done, terminate the sample from the debugger or from `API Monitor`.
 
