@@ -4,15 +4,17 @@
 2. Run `API Monitor` with **administrative privileges** and
    1. load a filter that blocks as soon as possible the sample to be analysed; I suggest to use the [Kernel32_Ntdll.xml](https://github.com/giadom/Debugging_with_API_Monitor/tree/main/Filters/) file present in the "Filters" directory of this repository;  
       ![Alternative text: "Loading a 'blocking filter' in API Monitor"](./Images/load_blocking_filter.png)
-   2. start monitoring a new sample (i.e. a program **not currently running**).
+   2. start monitoring a new sample (i.e. a program **not currently running**).  
       ![Alternative text: "Monitoring a new sample in API Monitor"](./Images/monitoring_new_sample.png)
-3. As you can see the program has stopped immediatly thanks to `API Monitor` (if you used the suggested filter, this interruption happened because every program calls immediatly an API of `Kernel32.dll` or `Ntdll.dll`); do not press the _Continue_ or _Break_ buttons for now.
-4. **Attach** the debugger chosen to the sample.
+3. As you can see the program has stopped immediatly thanks to `API Monitor` (if you used the suggested filter, this interruption happened because every program calls immediatly an API of `Kernel32.dll` or `Ntdll.dll`); do not press the _Continue_ or _Break_ buttons for now. (In my case it stopped at _DllMain_, but it really depends on the sample under inspection).  
+   ![Alternative text: "Stopped sample"](./Images/stopped_sample.png)
+4. **Attach** the debugger chosen to the sample and stay on the debugger.
 5. Put a **breakpoint** (a software one will be fine) to the entry point of the sample.
-6. Press the button to continue the execution(?) (you will not move the Instruction Pointer because `API Monitor` is blocking it).
-7. **Clear** the API filters.
-8. Load a filter that filters/inspects the **desired APIs**; I suggest to load `APIs-frequently_used_enhanced.xml` present in the "Filters" directory.
-9. 
+6. Press the button to continue the execution (you will not move the Instruction Pointer because `API Monitor` is blocking it).
+7. Go again to `API Monitor` and **clear** the API filter (i.e. press the red _X_ on the _API Filter_ tab).
+8. Load a filter that filters/inspects the **desired APIs**; I suggest to load `APIs-frequently_used_enhanced.xml` present in the "Filters" directory of this repository.
+9. Go to the window borned in point 2.2. (i.e. right after having started to monitor the sample).
+10. 
 
 [^1]: Read the caveat about the breakpoint on the `README.md` file in the "Filters" directory.
 ## Other notable use cases
