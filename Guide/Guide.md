@@ -22,20 +22,24 @@
     1. right click on it;
     2. go to `Include`
     3. press the `Calling Module Name` button  
-    ![Alternative text: "API Monitor while putting a display filter"](./Images/putting_display_filter.png)
+    ![Alternative text: "API Monitor while putting a display filter"](./Images/putting_display_filter.png)  
+    As you can see now you can better understand what is happening:  
+    ![Alternative text: "API Monitor displaying only APIs called by the sample"](./Images/after_display_filter.png)
+12. When done, terminate the sample from the debugger or from `API Monitor`.
 
-[^1]: Read the caveat about the breakpoint on the `README.md` file in the "Filters" directory.
 ## Other notable use cases
-### Analyse some anti-static-analysis techniques(?)
+### Analyse some anti-static-analysis techniques
 ### Get the malicious payload injected in a victim process/thread
 
 # FAQs
 ## Why do not simply attach API Monitor to a debugged program?
 Unfortunately API Monitor will fail in doing such operation: it will print an error message.  
-![Alternative text: "API Monitor error while attaching to a debugged program"](./Images/.png)
+![Alternative text: "API Monitor error while attaching to a debugged program"](./Images/fail_attaching_apimonitor.png)[^1]
+[^1]: The screenshot is for the _Remote Thread (Extended)_ mode of attaching, but also the others fail.
 
 ## What about anti-debugging techniques used by samples?
 This technique (as it is) can be detected by a sample looking for manually inspection traces.
 
 # To do list
+- [ ] Complete the guide. (By the way... you are ready to analyse samples yet).
 - [ ] Explain why this technique works.
