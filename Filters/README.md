@@ -15,7 +15,7 @@
 # Caveats and suggestions
 - When putting a breakpoint in one API, be conscious that it will interrupt the sample every time it is called.
 - Filtering too many APIs will slow down the program under inspection.
-- Regardless to the filter chosen, I suggest to keep it update during your carreer because you can encounter malwares that use APIs not filtered yet.
+- Regardless to the filter chosen, I suggest to keep it update during your carreer (e.g. by adding those unfiltered APIs used by a brand-new malware).
 
 # To do list
 - [ ] Extend the APIs filterable by `API Monitor` (i.e. modify the inner XML files of `API Monitor` in order to provide more APIs filterable by the user).
