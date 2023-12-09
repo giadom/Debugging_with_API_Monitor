@@ -12,9 +12,10 @@
   - suggestions from <https://malapi.io/> (which maps Windows APIs to common techniques used by malware);
   - suggestions from <https://www.sans.org/white-papers/33649/> (which is a white paper about abused APIs);
 
-# Caveats
+# Caveats and suggestions
 - When putting a breakpoint in one API, be conscious that it will interrupt the sample every time it is called.
 - Filtering too many APIs will slow down the program under inspection.
+- Regardless to the filter chosen, I suggest to keep it update during your carreer because you can encounter malwares that use APIs not filtered yet.
 
 # To do list
 - [ ] Extend the APIs filterable by `API Monitor` (i.e. modify the inner XML files of `API Monitor` in order to provide more APIs filterable by the user).
