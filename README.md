@@ -7,8 +7,8 @@ This technique has sped up my malware analysis on several occasions and to use i
 - `API Monitor`.
 
 In a nutshell, you will:
-1. debug a sample (including the possibility to move its Instruction Pointer as you whish);
-2. use `API Monitor` in the meanwhile to track all the APIs used by the sample under debugging.
+1. debug a sample (including the possibility to **move its Instruction Pointer** as you whish);
+2. track via `API Monitor` the desired APIs used by the sample (**still** under debugging).
 
 # Table of contents
 At:
