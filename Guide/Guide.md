@@ -34,7 +34,7 @@
 ### Get the malicious payload injected in a victim process/thread
 
 # FAQs
-## Why do not simply attach API Monitor to a debugged program?
+## Why do not simply attach API Monitor to a program under debugging?
 Unfortunately API Monitor will fail in doing such operation: it will print an error message.  
 ![Alternative text: "API Monitor error while attaching to a debugged program"](./Images/fail_attaching_apimonitor.png)[^1]
 [^1]: The screenshot is for the _Remote Thread (Extended)_ mode of attaching, but also the others fail.
