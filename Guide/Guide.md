@@ -32,6 +32,8 @@
 ## Other notable use cases
 ### Analyse some anti-static-analysis techniques
 ### Get the malicious payload injected in a victim process/thread
+### Easily interact with the parameters of an API
+As you have seen in the previous use case, you can easily interact with the parameters passed to an API: this include changing their values which at the end allows you to easily change the behaviour of a sample and hence better understand all its possible paths.
 
 # FAQs
 ## Why do not simply attach API Monitor to a program under debugging?
