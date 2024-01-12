@@ -33,7 +33,7 @@
 ### Analyse some anti-static-analysis techniques
 ### Get the malicious payload injected in a victim process/thread
 ### Easily interact with the parameters of an API
-As you have seen in the previous use case, you can easily interact with the parameters given to an API call**ed** by the sample. In addition to this, `API Monitor` allows you to change parameters of an API **before** its actual calling: this allows you to easily change the behaviour of a sample and hence better understand all its possible paths. The key functionality of `AP Monitor` that allows this is the _Before Calling Breakpoint_.  
+As you have seen in the previous use case, you can easily interact with the parameters given to an API call**ed** by the sample. In addition to this, `API Monitor` allows you to change parameters of an API **before** its actual calling: this allows you to easily change the behaviour of a sample and hence better understand all its possible paths. The key functionality of `AP Monitor` that allows this is the _Breakpoint Before Call_.  
 There are some machineries to be made to keep the sample under debugging by the debugger **and** under tracking by `API Monitor` without escaping both. I will write them as soon as possible, but by the way they are similar to the core technique.
 
 # FAQs
